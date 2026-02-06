@@ -55,7 +55,7 @@ public class StudentDaoImpl implements StudentDao{
 
 	@Override
 	public List<Student> getAllStudents() {
-		// selecting multiple All student
+		// selecting All student
 		String query="Select * from student ";
 		List<Student> student = this.jdbcTemplate.query(query,new RowMapperImpl());
 		return student;
